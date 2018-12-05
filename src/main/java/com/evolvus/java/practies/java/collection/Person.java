@@ -15,7 +15,7 @@ public class Person implements Comparable {
 		
 	public int compareTo(Object obj) {
 		Person p=(Person) obj;
-		return this.age-p.age;
+		return new Double(weight).compareTo(p.weight);
 	}
 	
 	@Override
@@ -27,7 +27,8 @@ public class Person implements Comparable {
 		Person p1=new Person("kumar", 32, 81.6);
 		Person p2=new Person("ravi", 28, 75.00);
 		Person p3=new Person("ram", 22, 70.00);
-		Person[] all= {p1,p2,p3};
+		Person p4=new Person("anish", 21, 60.00);
+		Person[] all= {p1,p2,p3,p4};
 		System.out.println(Arrays.toString(all));
 		Arrays.sort(all);
 		System.out.println(Arrays.toString(all));
