@@ -13,8 +13,7 @@ public class Manager12 {
 		list.add(29);
 		Iterator it=list.iterator();
 		while (it.hasNext()) {
-			System.out.println(it.next());
-			
+			System.out.println(it.next());			
 		}
 		/**
 		 * Iterator can be iterate only one time
